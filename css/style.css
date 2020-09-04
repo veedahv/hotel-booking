@@ -144,10 +144,6 @@ span {
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
-.desc-img-div-img {
-    opacity: 5;
-}
-
 .map-card {
     flex-direction: column;
     justify-content: space-between;
@@ -215,7 +211,7 @@ span {
 }
 
 .ul-li {
-    margin: 10px 20px 20px 20px;
+    margin: 10px 20px 20px 23px;
 }
 
 .date {
@@ -540,6 +536,8 @@ footer{
     color: #ffffff;
     line-height: 20px;
     font-size: 12px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 footer a {
@@ -631,10 +629,6 @@ footer .best-tag {
 .require p {
     display: flex;
     align-items: center;
-}
-
-footer {
-    padding-top: 50px;
 }
 
 footer input,
