@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Hotel Booking Freebie</title>
 </head>
 
 <body>
@@ -29,7 +34,7 @@
                     <div>
                         <input type="text" name="" id="" placeholder="Search location" class="search-box">
                     </div>
-                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></i></button>
                 </div>
                 <div class="flex profile-user">
                     <div>
@@ -56,23 +61,23 @@
     <section class="description">
         <div>
             <p class="menu-info">Home / Flash Offers / Grand Hilton Hotel</p>
-            <div>
-                <img src="images/section-1/Star.png" alt="">
-                <img src="images/section-1/Star.png" alt="">
-                <img src="images/section-1/Star.png" alt="">
-                <img src="images/section-1/Star.png" alt="">
-                <img src="images/section-1/Star.png" alt="">
-            </div>
+            <span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
             <h1>GRAND HILTON HOTEL</h1>
             <p class="menu-info-two">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
         <div class="flex desc-box">
             <div class="desc-img-div">
-                <img src="images/section-1/Rectangle 5.jpg" alt="">
+                <img src="images/section-1/Rectangle 5.jpg" alt="" class="desc-img-div-img">
             </div>
             <div class="flex map-card">
                 <div>
-                    <div class="card-box desc-card">
+                    <div class="desc-card">
                         <div class="flex card-details">
                             <div>
                                 <p class="price-starts">price starts as</p>
@@ -129,7 +134,7 @@
                 <div class="flex pack-wrap">
                     <div class="card upper-cards">
                         <div class="package-head">Package Highlights</div>
-                        <div class="flex Package-card">
+                        <div class="flex Package-card package-card-first">
                             <ul class="ul-li">
                                 <li>Half Board/ All Inclusive</li>
                                 <li>Child Under 11 Years Stay Free</li>
@@ -221,7 +226,7 @@
         </div>
     </section>
     <section class="packages">
-        <h3>OTHER PACKAGES</h3>
+        <h3 class="package-title">OTHER PACKAGES</h3>
         <div>
             <div class="grid-contain">
                 <div class="flex grid-item-one-two">
@@ -229,16 +234,16 @@
                         <div class="flash-offer">Flash Offer</div>
                         <img src="images/section-2/image1.jpg" alt="">
                     </div>
-                    <div class="card-box">
-                        <div>
-                            <img src="images/section-1/Star.png" alt="">
-                            <img src="images/section-1/Star.png" alt="">
-                            <img src="images/section-1/Star.png" alt="">
-                            <img src="images/section-1/Star.png" alt="">
-                            <img src="images/section-1/Star.png" alt="">
-                        </div>
+                    <div class="card-box top-card-note">
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
                         <h4>Hotel Blue Haven</h4>
-                        <p>
+                        <p class="about-hotel">
                             Aute quis duis excepteur excepteur ipsum cat
                             eiusmod consectetur enim laborum magna llit.
                             Ipsum est fugiat velit ea llamco do esse ut
@@ -247,17 +252,23 @@
                             nsectetur enim laborum magna mollit.
                             Ipsum est fugiat velit ea ullamco do
                         </p>
-                        <div class="flex">
-                            <img src="images/map-pin.png" alt="">
-                            <p>1749 Wheeler Ridge Delaware</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/map-pin.png" alt=""></div>
+                            <div>
+                                <p>1749 Wheeler Ridge Delaware</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/user.png" alt="">
-                            <p>2 x Guests</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/user.png" alt=""></div>
+                            <div>
+                                <p>2 x Guests</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/room.png" alt="">
-                            <p>1 x Room</p>
+                        <div class="flex card-detail-flex del">
+                            <div><img src="images/room.png" alt=""></div>
+                            <div>
+                                <p>1 x Room</p>
+                            </div>
                         </div>
                         <del>$ 10,500</del>
                         <div class="flex btn-div">
@@ -267,23 +278,29 @@
                     </div>
                 </div>
                 <div class="grid-item-two-two flex card-align">
-                    <div class="map">
+                    <div class="map map-image">
                         <div class="flash-offer">Flash Offer</div>
                         <img src="images/section-2/image2.jpg" alt="">
                     </div>
                     <div class="card-box">
                         <h4>LUX* Belle Mare</h4>
-                        <div class="flex">
-                            <img src="images/map-pin.png" alt="">
-                            <p>1749 Wheeler Ridge Delaware</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/map-pin.png" alt=""></div>
+                            <div>
+                                <p>1749 Wheeler Ridge Delaware</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/user.png" alt="">
-                            <p>2 x Guests</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/user.png" alt=""></div>
+                            <div>
+                                <p>2 x Guests</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/room.png" alt="">
-                            <p>1 x Room</p>
+                        <div class="flex card-detail-flex del">
+                            <div><img src="images/room.png" alt=""></div>
+                            <div>
+                                <p>1 x Room</p>
+                            </div>
                         </div>
                         <del>$ 8,500</del>
                         <div class="flex btn-div">
@@ -293,23 +310,29 @@
                     </div>
                 </div>
                 <div class="grid-item-for flex card-align">
-                    <div class="map">
+                    <div class="map map-image">
                         <div class="flash-offer">Flash Offer</div>
                         <img src="images/section-2/image3.jpg" alt="">
                     </div>
                     <div class="card-box">
                         <h4>White Palace</h4>
-                        <div class="flex">
-                            <img src="images/map-pin.png" alt="">
-                            <p>1749 Wheeler Ridge Delaware</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/map-pin.png" alt=""></div>
+                            <div>
+                                <p>1749 Wheeler Ridge Delaware</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/user.png" alt="">
-                            <p>2 x Guests</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/user.png" alt=""></div>
+                            <div>
+                                <p>2 x Guests</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/room.png" alt="">
-                            <p>1 x Room</p>
+                        <div class="flex card-detail-flex del">
+                            <div><img src="images/room.png" alt=""></div>
+                            <div>
+                                <p>1 x Room</p>
+                            </div>
                         </div>
                         <del>$ 10,500</del>
                         <div class="flex btn-div">
@@ -319,49 +342,61 @@
                     </div>
                 </div>
                 <div class="grid-item-fiv flex card-align">
-                    <div class="map">
+                    <div class="map map-image">
                         <div class="flash-offer">Flash Offer</div>
                         <img src="images/section-2/image4.jpg" alt="">
                     </div>
                     <div class="card-box">
                         <h4>Luxury Place</h4>
-                        <div class="flex">
-                            <img src="images/map-pin.png" alt="">
-                            <p>1749 Wheeler Ridge Delaware</p>
-                        </div>
-                        <div class="flex">
-                            <img src="images/user.png" alt="">
-                            <p>2 x Guests</p>
-                        </div>
-                        <div class="flex">
-                            <img src="images/room.png" alt="">
-                            <p>1 x Room</p>
-                        </div>
-                        <del">$ 4,500</del>
-                            <div class="flex btn-div">
-                                <p>$ 2,500</p>
-                                <button class="btn-book">Book Now</button>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/map-pin.png" alt=""></div>
+                            <div>
+                                <p>1749 Wheeler Ridge Delaware</p>
                             </div>
+                        </div>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/user.png" alt=""></div>
+                            <div>
+                                <p>2 x Guests</p>
+                            </div>
+                        </div>
+                        <div class="flex card-detail-flex del">
+                            <div><img src="images/room.png" alt=""></div>
+                            <div>
+                                <p>1 x Room</p>
+                            </div>
+                        </div>
+                        <del>$ 4,500</del>
+                        <div class="flex btn-div">
+                            <p>$ 2,500</p>
+                            <button class="btn-book">Book Now</button>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-item-six flex card-align">
-                    <div class="map">
+                    <div class="map map-image">
                         <div class="flash-offer">Flash Offer</div>
                         <img src="images/section-2/image5.jpg" alt="">
                     </div>
                     <div class="card-box">
                         <h4>Hotel Five Star</h4>
-                        <div class="flex">
-                            <img src="images/map-pin.png" alt="">
-                            <p>1749 Wheeler Ridge Delaware</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/map-pin.png" alt=""></div>
+                            <div>
+                                <p>1749 Wheeler Ridge Delaware</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/user.png" alt="">
-                            <p>2 x Guests</p>
+                        <div class="flex card-detail-flex">
+                            <div><img src="images/user.png" alt=""></div>
+                            <div>
+                                <p>2 x Guests</p>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <img src="images/room.png" alt="">
-                            <p>1 x Room</p>
+                        <div class="flex card-detail-flex del">
+                            <div><img src="images/room.png" alt=""></div>
+                            <div>
+                                <p>1 x Room</p>
+                            </div>
                         </div>
                         <del>$ 6,500</del>
                         <div class="flex btn-div">
@@ -374,78 +409,84 @@
     </section>
     <section class="reviews">
         <h3>WHAT PEOPLE THINK ABOUT US</h3>
-        <img src="images/left-arrow.png" alt="" class="left-arrow" class="quote-start">
-        <div class="review-container">
-            <img src="images/section-3/quote-start.png" alt="">
-            <div class="reviewer-detail">
-                <img src="images/section-3/Ellipse 3.png" alt="">
-                <p class="pink-name">Megan Fox</p>
-                <p>Stayed 18 Nov, 2018</p>
-                <div>
-                    <img src="images/section-1/Star.png" alt="">
-                    <img src="images/section-1/Star.png" alt="">
-                    <img src="images/section-1/Star.png" alt="">
-                    <img src="images/section-1/Star.png" alt="">
-                    <img src="images/section-1/Star.png" alt="">
+        <div class="flex">
+            <div class="flex">
+                <img src="images/left-arrow.png" alt="" class="left-arrow" class="quote-start">
+            </div>
+            <div class="review-container">
+                <img src="images/section-3/quote-start.png" alt="">
+                <div class="reviewer-detail">
+                    <img src="images/section-3/Ellipse 3.png" alt="">
+                    <p class="pink-name">Megan Fox</p>
+                    <p>Stayed 18 Nov, 2018</p>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="review-note-div">
+                    <p class="review-note">
+                        It was very nice hotel with cleanliness.
+                        Staff behavior was good and polite. They welcome us very well.
+                        Issue was only that Lift was not in working and we
+                        were allotted to 3rd floor and amenities articles were
+                        in corner of gallery which were giving bad feeling.
+                        Breakfast was good and support of the staff was also very nice.
+                        Location is not good as per atmosphere,
+                        it is very nearby most of the popular places but self
+                        location in a narrow street is not good.
+                        Overall it was a good experience and could recommend.
+                    </p>
+                    <img src="images/section-3/quote-end.png" alt="" class="quote-end">
                 </div>
             </div>
-            <div class="review-note-div">
-                <p class="review-note">
-                    It was very nice hotel with cleanliness.
-                    Staff behavior was good and polite. They welcome us very well.
-                    Issue was only that Lift was not in working and we
-                    were allotted to 3rd floor and amenities articles were
-                    in corner of gallery which were giving bad feeling.
-                    Breakfast was good and support of the staff was also very nice.
-                    Location is not good as per atmosphere,
-                    it is very nearby most of the popular places but self
-                    location in a narrow street is not good.
-                    Overall it was a good experience and could recommend.
-                </p>
-                <img src="images/section-3/quote-end.png" alt="" class="quote-end">
+            <div class="flex">
+                <img src="images/right-arrow.png" alt="" class="right-arrow">
             </div>
         </div>
-        <img src="images/right-arrow.png" alt="" class="right-arrow">
     </section>
     <section class="newsletter flex">
         <div>
             <h5>subscribe to our</h5>
             <h2>NEWSLETTER</h2>
         </div>
-        <div>
-            <form action="">
-                <label for="">
+        <div class="send-div">
+            <label for="" class=" flex">
+                <div>
                     <input type="text" placeholder="Your Email Address" class="send-box">
-                    <button class="btn-send">Send</button>
-                </label>
-            </form>
+                </div>
+                <button class="btn-send">Send</button>
+            </label>
         </div>
     </section>
     <section class="activities">
-        <h4>OTHER ACTIVITIES</h4>
+        <h3>OTHER ACTIVITIES</h3>
         <div class="grid-activity">
-            <div class="grid-activity-one">
+            <div class="grid-activity-one grid-activity-item">
                 <div class="activity-decs">
                     <p>The curious corner of chamarel</p>
                     <button class="btn-book">Book Now</button>
                 </div>
                 <img src="images/section-5/image1.jpg" alt="" class="activity-image">
             </div>
-            <div class="grid-activity-two">
+            <div class="grid-activity-two grid-activity-item">
                 <div class="activity-decs">
                     <p>Gymkhana club golf course</p>
                     <button class="btn-book">Book Now</button>
                 </div>
                 <img src="images/section-5/image2.jpg" alt="" class="activity-image">
             </div>
-            <div class="grid-activity-tre">
+            <div class="grid-activity-tre grid-activity-item">
                 <div class="activity-decs">
                     <p>Tamarind falls hiking trip - full day</p>
                     <button class="btn-book">Book Now</button>
                 </div>
                 <img src="images/section-5/image3.jpg" alt="" class="activity-image">
             </div>
-            <div class="grid-activity-for">
+            <div class="grid-activity-for grid-activity-item">
                 <div class="activity-decs">
                     <p>The blue marine discovery quest</p>
                     <button class="btn-book">Book Now</button>
@@ -487,10 +528,9 @@
             </div>
             <div class="flex footer-grid-for">
                 <h3>SOCIAL NETWORK</h3>
-                <div>
+                <div class="social-icon-div">
                     <a href="" class="social-link"><img src="images/footer/fb.png" alt="" class="social-icon"></a>
-                    <a href="" class="social-link"><img src="images/footer/youtube.png" alt=""
-                            class="social-icon"></a>
+                    <a href="" class="social-link"><img src="images/footer/youtube.png" alt="" class="social-icon"></a>
                     <a href="" class="social-link"><img src="images/footer/ig.png" alt="" class="social-icon"></a>
                 </div>
             </div>
@@ -505,24 +545,25 @@
             </div>
             <div class="contact-details footer-grid-six">
                 <h3>CONTACT DETAILS</h3>
-                <p>Feel free to contact us by phone, email or by our contact form</p>
+                <p class="feel-note">Feel free to contact us by phone, email or by our contact form</p>
                 <div>
-                    <div class="flex">
-                        <img src="images/map-pin.png" alt="">
+                    <div class="flex contact-div">
+                        <div class="contact-icon"><img src="images/map-pin.png" alt=""></div>
                         <div>
                             <p>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</p>
                         </div>
                     </div>
-                    <div class="flex">
-                        <div><img src="images/user.png" alt="" class="footer-user"></div>
+                    <div class="flex contact-div">
+                        <div class="flex user-div contact-icon"><img src="images/user.png" alt="" class="footer-user">
+                        </div>
                         <div>
                             <p>Tel (business hours) : 269 1500</p>
                             <p>Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</p>
                             <p>Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
                         </div>
                     </div>
-                    <div class="flex">
-                        <img src="images/mail.png" alt="">
+                    <div class="flex contact-div">
+                        <div class="contact-icon"><img src="images/mail.png" alt=""></div>
                         <div>
                             <p>cherly.lawson@example.com</p>
                         </div>
@@ -544,14 +585,16 @@
                 </div>
             </div>
         </div>
-        <div class="footer-end">
-            <div>
-                <a href="">Disclaimer</a>
-                <a href="">Condition of use</a>
-                <a href="">Cancellation policy</a>
-            </div>
-            <div>
-                <img src="images/footer/image 3.png" alt="">
+        <div class="footer-end-div flex">
+            <div class="footer-end flex">
+                <div class="footer-end-link flex">
+                    <a href="">Disclaimer</a>
+                    <a href="">Condition of use</a>
+                    <a href="">Cancellation policy</a>
+                </div>
+                <div class="footer-end-img flex">
+                    <img src="images/footer/image 3.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
