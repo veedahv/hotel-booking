@@ -4,11 +4,11 @@
     header {
         padding: 15px 30px;
         font-size: 13px;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     header ul {
-        flex-direction: column;
+        flex-direction: row;
     }
     
     header li {
@@ -16,44 +16,50 @@
     }
     
     .gift {
-        padding-right: 0px;
+        padding-right: 10px;
     }
     
     .nav-top{
         padding: 15px 30px;
-        flex-direction: column;
     }
     
     .best-tag {
-        line-height: 40px;
+        line-height: 22px;
     }
+
+
     
-    .nav-links{
+    .nav-a{
+        display: none;
         padding: 20px 30px;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
     
     nav h1 {
-        margin-top: 15px;
+        margin-top: 0px;
+        margin-right: 5px;
     }
     
     .search-contain {
+        width: 100%;
         border-radius: 10px;
+        height: 60px;
     }
     
     .search-box {
-        padding: 15px 50px 15px 15px;
+        padding: 15px 1px 15px 5px;
         height: 60px;
     }
     
     .btn-search {
-        padding: 15px 20px;
+        padding: 15px 10px;
+        width: 100%;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
     
     .profile-user {
+        display: none;
         padding: 10px 0px;
     }
     
@@ -189,7 +195,7 @@
     
     .package-links {
         margin: 20px 0px;
-        justify-content: space-between;
+        flex-direction: column;
     }
     
     .package-links li {
@@ -444,6 +450,7 @@
         font-size: 12px;
         padding-top: 50px;
         padding-bottom: 30px;
+        text-align: center;
     }
     
     .footer-grid {
@@ -493,7 +500,7 @@
     }
     
     .contact-details {
-        width: 500px;
+        width: 100%;
     }
     
     .footer-btn {
@@ -509,17 +516,21 @@
     }
     
     .info-box {
-        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .info-box input {
+        margin-bottom: 10px;
     }
     
     .personal-info {
-        width: 270px;
+        width: 100%;
         padding: 10px 100px 10px 10px;
     }
     
     .message {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 5px;
         padding: 10px 50px 100px 10px;
     }
     
@@ -540,8 +551,8 @@
     
     .footer-end {
         margin-top: 20px;
-        width: 63%;
-        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
     }
     
     .footer-end-div {
@@ -565,7 +576,8 @@
         margin-right: 10px;
     }
     
-    .footer-end-link a {
-        margin-right: 10px;
+    .footer-end-link {
+        margin: auto;
+        flex-direction: column;
     }
 }

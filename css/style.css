@@ -36,12 +36,10 @@ header li {
 }
 
 .gift {
-    list-style-image: url(../images/header/gift.png);
     padding-right: 70px;
 }
 
 .loyalty {
-    list-style-image: url(../images/header/loyalty.png);
 }
 
 .nav-top{
