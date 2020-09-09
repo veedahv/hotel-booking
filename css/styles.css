@@ -1,6 +1,6 @@
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 425px) {
     header {
         padding: 15px 30px;
         font-size: 13px;
@@ -27,7 +27,23 @@
         line-height: 22px;
     }
 
+    .toggle{
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 120px;
+        overflow: hidden;
+        background: #0A223D;
+    }
 
+    .nav-a a {
+        color: #ffffff;
+    }
+
+    .hamburger {
+        display: block;
+        color: #ffffff;
+    }
     
     .nav-a{
         display: none;
@@ -223,6 +239,7 @@
     .grid-container {
         display: grid;
         grid-gap: 30px 50px;
+        grid-template-columns: 1fr;
     }
     
     .grid-item-one {
@@ -296,6 +313,7 @@
     .grid-contain {
         display: grid;
         grid-gap: 10px;
+        grid-template-columns: 1fr;
     }
     
     .grid-item-one-two {
@@ -407,28 +425,15 @@
     }
     
     .grid-activity {
-        display: grid;
-        grid-gap: 10px;
+        flex-direction: column;
     }
     
-    .grid-activity-one {
-        grid-row: 1 / 1;
-        grid-column: 1 / 2;
-    }
-    
-    .grid-activity-two {
-        grid-row: 2 / 2;
-        grid-column: 1 / 2;
-    }
-    
-    .grid-activity-tre {
-        grid-row: 3 / 3;
-        grid-column: 1 / 2;
-    }
-    
+    .grid-activity-one,
+    .grid-activity-two,
+    .grid-activity-tre,
     .grid-activity-for {
-        grid-row: 4 / 4;
-        grid-column: 1 / 2;
+        margin-top: 12px;
+        margin-right: auto;
     }
     
     .activities p {
@@ -456,6 +461,7 @@
     .footer-grid {
         display: grid;
         grid-gap: 20px 10px;
+        grid-template-columns: 1fr;
     }
     
     .footer-grid-one{

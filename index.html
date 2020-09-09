@@ -48,24 +48,27 @@
                         <img src="images/nav/Cart.png" alt="" class="cart">
                     </div>
                     <img src="images/nav/Ellipse 1.png" alt="" class="display-pic">
-                    <p>Nathan</p>
+                    <select name="settings" id="">
+                        <option value="name"><p>Nathan</p></option>
+                    </select>
+                    
                     <div class="arrow-down">
-                        <img src="images/down-arrow.png" alt="">
+                        <!-- <img src="images/down-arrow.png" alt=""> -->
                     </div>
                 </div>
             </div>
         </div>
         <div class="nav-links">
-            <div class="hamburger"><img src="images/icon-hamburger.svg" alt="toggle"></div>
+            <div class="hamburger" onclick="hamburg()"><i class="fa fa-bars" aria-hidden="true"></i></div>
             <div class="nav-a">
-            <a href="">ALL DEALS</a>
-            <a href="">HOTELS</a>
-            <a href="">ACTIVITIES</a>
-            <a href="">HOTEL DAY PACKAGES</a>
-            <a href="">RESTAURANTS</a>
-            <a href="">EVENTS</a>
-            <a href="">RODRIGUES</a>
-        </div>
+                <a href="">ALL DEALS</a>
+                <a href="">HOTELS</a>
+                <a href="">ACTIVITIES</a>
+                <a href="">HOTEL DAY PACKAGES</a>
+                <a href="">RESTAURANTS</a>
+                <a href="">EVENTS</a>
+                <a href="">RODRIGUES</a>
+            </div>
         </div>
     </nav>
     <section class="description">
@@ -474,7 +477,7 @@
     </section>
     <section class="activities">
         <h3>OTHER ACTIVITIES</h3>
-        <div class="grid-activity">
+        <div class="grid-activity flex">
             <div class="grid-activity-one grid-activity-item">
                 <div class="activity-decs">
                     <p>The curious corner of chamarel</p>
@@ -608,6 +611,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 
 </body>
 
