@@ -1,6 +1,6 @@
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
     header {
         padding: 15px 30px;
         font-size: 13px;
@@ -10,9 +10,13 @@
     header ul {
         flex-direction: row;
     }
-    
+
     header li {
-        padding-left: 5px;
+        flex-direction: column;
+    }
+
+    header li div {
+        justify-content: center;
     }
     
     .gift {
@@ -21,10 +25,13 @@
     
     .nav-top{
         padding: 15px 30px;
+        flex-direction: column;
+        text-align: center;
     }
     
     .best-tag {
         line-height: 22px;
+        margin-bottom: 10px;
     }
 
     .toggle{
@@ -54,24 +61,6 @@
     nav h1 {
         margin-top: 0px;
         margin-right: 5px;
-    }
-    
-    .search-contain {
-        width: 100%;
-        border-radius: 10px;
-        height: 60px;
-    }
-    
-    .search-box {
-        padding: 15px 1px 15px 5px;
-        height: 60px;
-    }
-    
-    .btn-search {
-        padding: 15px 10px;
-        width: 100%;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
     
     .profile-user {
@@ -150,12 +139,6 @@
     }
 
     .desc-ul-div {
-        /* background-color: #ffffff;
-        padding: 5px 10px;
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        margin-bottom: 25px; */
         margin-left: 50px;
     }
     
@@ -186,10 +169,16 @@
         border-top-right-radius: 6px;
         padding: 10px 20px;
     }
-    
-    .Package-card {
+
+    .Package-card,
+    .Package-card-div {
+        justify-content: space-between;
         padding: 20px;
         flex-direction: column;
+    }
+
+    .Package-card .pink-head {
+        margin-bottom: 10px;
     }
     
     .pack-wrap {
@@ -197,11 +186,11 @@
     }
     
     .ul-li {
-        margin: 10px 20px 20px 23px;
+        margin: 0px 20px 0px 23px;
     }
     
     .date {
-        margin: 10px 10px 20px 23px;
+        margin: 0px 10px 0px 23px;
     }
     
     .ul-li li,
@@ -228,7 +217,7 @@
     }
     
     .package-card-first .ul-li {
-        padding-bottom: 13px;
+        padding-bottom: 0px;
     }
     
     .valid{
@@ -271,17 +260,6 @@
         grid-row: 7 / 8;
         grid-column: 1 / 2;
     }
-/*     
-    .flash-offer{
-        padding: 5px;
-        width: 105px;
-        height: 30px;
-        top: 0;
-        left: 0;
-        margin-top: 10px;
-        position: absolute;
-        z-index: 1;
-    } */
     
     .card-align {
         flex-direction: column;
@@ -405,25 +383,6 @@
         padding: 50px 30px;
     }
     
-    .send-box {
-        padding: 10px 20px;
-        border: none;
-        height: 46px;
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }
-    
-    .send-div {
-        border-radius: 6px;
-    }
-    
-    .btn-send {
-        padding: 10px 20px;
-        height: 46px;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-    }
-    
     .grid-activity {
         flex-direction: column;
     }
@@ -514,7 +473,7 @@
     }
     
     .social-icon-div {
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
     .social-icon {
@@ -563,6 +522,543 @@
     
     .footer-end-div {
         justify-content: flex-end;
+    }
+
+    .footer-end-img {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    .user-div {
+        align-items: center;
+    }
+    
+    footer h3,
+    .feel-note {
+        margin-bottom: 20px;
+    }
+    
+    .contact-div {
+        margin-bottom: 10px;
+    }
+    
+    .contact-icon {
+        margin-right: 10px;
+    }
+    
+    .footer-end-link {
+        margin: auto;
+        flex-direction: column;
+    }
+
+}@media only screen and (max-width: 1024px) and (min-width: 500px) {
+    header {
+        padding: 15px 30px;
+        font-size: 13px;
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: row;
+    }
+    
+    header li {
+        padding-left: 5px;
+    }
+    
+    .gift {
+        padding-right: 10px;
+    }
+    
+    .nav-top{
+        padding: 15px 30px;
+    }
+    
+    .best-tag {
+        line-height: 22px;
+    }
+
+    .toggle{
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 120px;
+        overflow: hidden;
+        background: #0A223D;
+    }
+
+    .nav-a a {
+        color: #ffffff;
+    }
+
+    .hamburger {
+        display: block;
+        color: #ffffff;
+    }
+    
+    .nav-a{
+        display: none;
+        padding: 20px 30px;
+        flex-direction: column;
+    }
+    
+    nav h1 {
+        margin-top: 0px;
+        margin-right: 5px;
+    }
+    
+    .profile-user {
+        display: none;
+        padding: 10px 0px;
+    }
+    
+    .cart {
+        margin-right: 40px;
+    }
+    
+    .display-pic {
+        margin-right: 18px;
+    }
+    
+    .profile-user p {
+        margin: 10px 5px;
+    }
+    
+    .arrow-down {
+        margin-top: 10px;
+    }
+    
+    section,
+    footer {
+        padding: 20px 30px;
+    }
+    
+    .menu-info {
+        margin-bottom: 30px;
+    }
+    
+    .menu-info-two {
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+
+    .desc-box {
+        flex-direction: column;
+    }
+
+    .desc-img-div {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .desc-img-div-img {
+        width: 100%;
+    }
+    
+    .desc-card {
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .card-details {
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .price-starts {
+        font-size: 10px;
+    }
+    
+    .per-room {
+        font-size: 15px;
+    }
+    
+    .btn-options {
+        border-radius: 5px;
+        padding: 17px 10px;
+        margin-top: 7px;
+        margin-bottom: 15px;
+    }
+
+    .desc-ul-div {
+        margin-left: 50px;
+    }
+    
+    .desc-ul {
+        width: 140px;
+    }
+    
+    .desc-ul li {
+        font-size: 10px;
+    }
+    
+    .card {
+        margin-top: 20px;
+    }
+    
+    .upper-cards {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .pack-wrap {
+        flex-direction: column;
+    }
+    
+    .ul-li {
+        margin: 10px 20px 20px 23px;
+    }
+    
+    .date {
+        margin: 10px 10px 20px 23px;
+    }
+    
+    .ul-li li,
+    .date {
+        font-size: 15px;
+    }
+    
+    .package-links {
+        margin: 20px 0px;
+        flex-direction: column;
+    }
+    
+    .package-links li {
+        padding: 7px 0px;
+        font-weight: bold;
+    }
+    
+    .ul-li{
+        font-size: 17px;
+    }
+    
+    .valid{
+        padding-left: 16px;
+        font-size: 12px;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-gap: 30px 50px;
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-item-one {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    
+    .grid-item-two {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    
+    .grid-item-tre {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    
+    .grid-item-for {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+    
+    .grid-item-fiv {
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+    }
+    
+    .grid-item-six {
+        grid-row: 7 / 8;
+        grid-column: 1 / 2;
+    }
+    
+    .card-align {
+        flex-direction: column;
+        width: 100%;
+        height: 420px;
+    }
+    
+    .map-image{
+        height: 200px;
+    }
+    
+    .about-hotel {
+        margin-bottom: 30px;
+    }
+    
+    .card-detail-flex img {
+        margin-right: 15px;
+    }
+    
+    .del {
+        margin-bottom: 30px;
+    }
+    
+    .btn-div p {
+        display: flex;
+        align-items: center;
+    }
+    
+    .grid-contain {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .grid-item-one-two {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        height: 100%;
+        flex-direction: row;
+    }
+    
+    .grid-item-two-two {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .grid-contain .grid-item-for {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;        
+    }
+
+    .grid-contain .grid-item-fiv {
+        grid-row: 3 / 3;
+        grid-column: 1 / 2;        
+    }
+
+    .grid-contain .grid-item-six {
+        grid-row: 3 / 3;
+        grid-column: 2 / 3;        
+    }
+    
+    .map img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .top-card-note {
+        width: 50%;
+    }
+    
+    .card-box {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        padding: 20px 10px 15px 25px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    
+    .card-box h4 {
+        margin-bottom: 15px;
+    }
+    
+    .btn-book {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .btn-div {
+        justify-content: space-between;
+    }
+    
+    .right-arrow,
+    .left-arrow {
+        display: flex;
+        align-items: center;
+        margin-top: 130px;
+        width: 10px;
+        height: 20px;
+    }
+    
+    .reviews h3 {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    
+    .review-container {
+        width: 770px;
+        border-radius: 5px;
+        margin: 40px auto;
+        position: relative;
+    }
+    
+    .reviewer-detail {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        top: -50px;
+        left: 80px;
+        text-align: center;
+    }
+    
+    .review-note-div {
+        padding: 150px 20px 10px 20px;
+        text-align: center;
+    }
+    
+    .quote-end {
+        position: absolute;
+        top: 150px;
+        right: 50px;
+    }
+    
+    .newsletter{
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+    
+    .grid-activity {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .grid-activity-one,
+    .grid-activity-two,
+    .grid-activity-tre,
+    .grid-activity-for {
+        width: 300px;
+        margin-top: 12px;
+        margin-right: auto;
+    }
+    
+    .activities p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .activities h3 {
+        margin-bottom: 20px;
+    }
+    
+    .activity-decs{
+        padding: 150px 10px 10px 10px;
+        position: absolute;
+    }
+    
+    footer{
+        line-height: 20px;
+        font-size: 12px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer-grid {
+        display: grid;
+        grid-gap: 20px 10px;
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid-one{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+    
+    .footer-grid-two{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+    
+    .footer-grid-tre{
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+    }
+    
+    .footer-grid-for{
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+    }
+    
+    .footer-grid-fiv{
+        grid-row: 5 / 6;
+        grid-column: 1 / 3;
+    }
+    
+    .footer-grid-six{
+        grid-row: 6 / 7;
+        grid-column: 1 / 3;
+    }
+    
+    .footer-grid-sev {
+        grid-row: 7 / 8;
+        grid-column: 1 / 3;
+    }
+    
+    footer .best-tag {
+        margin-top: 10px;
+        line-height: 45px;
+        font-size: 50px;
+    }
+    
+    .contact-details {
+        width: 100%;
+    }
+    
+    .footer-btn {
+        padding: 10px 20px;
+    }
+    
+    .social-icon-div {
+        margin-left: 10px;
+    }
+    
+    .social-icon {
+        margin-left: 10px;
+    }
+    
+    .info-box {
+        flex-direction: column;
+    }
+    
+    .info-box input {
+        margin-bottom: 10px;
+    }
+    
+    .personal-info {
+        width: 100%;
+        padding: 10px 100px 10px 10px;
+    }
+    
+    .message {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px 50px 100px 10px;
+    }
+    
+    .require {
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .require p {
+        display: flex;
+        align-items: center;
+    }
+    
+    footer input,
+    footer button {
+        border-radius: 5px;
+    }
+    
+    .footer-end {
+        margin-top: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .footer-end-div {
+        justify-content: flex-end;
+    }
+
+    .footer-end-img {
+        margin-top: 10px;
+        justify-content: center;
     }
     
     .user-div {

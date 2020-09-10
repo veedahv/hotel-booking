@@ -32,6 +32,10 @@ ul {
     list-style-type: none;
 }
 
+li {
+    line-height: 22px;
+}
+
 header {
     padding: 15px 130px;
     justify-content: space-between;
@@ -41,12 +45,12 @@ header a {
     color: #333333;
 }
 
-header li {
-    padding-left: 5px;
+header ul {
+    justify-content: space-between;
 }
 
-.gift {
-    padding-right: 70px;
+header li {
+    justify-content: space-between;
 }
 
 .loyalty {
@@ -79,9 +83,12 @@ button, .flash-offer {
     color: #EC1F46;
 }
 
-.nav-a{
+.nav-links {
     background: #0A223D;
     padding: 30px 130px;
+}
+
+.nav-a {
     display: flex;
     justify-content: space-between;
 }
@@ -93,17 +100,18 @@ nav h1 {
 .search-contain {
     background: #F5FAFE;
     border-radius: 10px;
+    width: 260px;
 }
 
 .search-box {
-    padding: 15px 50px 15px 15px;
+    padding: 10px 40px 10px 10px;
     border: none;
     background: #F5FAFE;
-    height: 60px;
+    height: 50px;
 }
 
 .btn-search {
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -153,7 +161,12 @@ span {
 }
 .desc-img-div{
     margin-right: 20px;
+    background-blend-mode: soft-light;
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.desc-img-div img {
+    opacity: 0.6;
 }
 
 .map-card {
@@ -300,6 +313,11 @@ span {
 .Package-card {
     background: #ffffff;
     padding: 20px;
+}
+
+.Package-card,
+.Package-card-div {
+    justify-content: space-between;
 }
 
 .pack-wrap {
@@ -449,7 +467,7 @@ span {
 }
 
 .send-box {
-    padding: 10px 40px;
+    padding: 8px 15px;
     border: none;
     height: 46px;
     border-top-left-radius: 6px;
@@ -459,12 +477,12 @@ span {
 .send-div {
     background-color: #ffffff;
     border-radius: 6px;
-    width: 100%;
+    width: 260px;
 }
 
 .btn-send {
     width: 100%;
-    padding: 10px 40px;
+    padding: 8px 15px;
     height: 46px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -542,6 +560,7 @@ footer a {
 .footer-grid-for{
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    margin: auto;
 }
 
 .footer-grid-fiv{
