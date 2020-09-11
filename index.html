@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
@@ -24,11 +24,11 @@
         </div>
         <ul class="header-ul flex">
             <li class="gift flex">
-                <div class="flex"><img src="images/header/gift.png" alt=""></div>
+                <div class="flex gift-img"><img src="images/header/gift.png" alt=""></div>
                 <a href=""> BTP Gift Card</a>
             </li>
             <li class="loyalty flex">
-                <div class="flex"><img src="images/header/loyalty.png" alt=""></div>
+                <div class="flex gift-img"><img src="images/header/loyalty.png" alt=""></div>
                 <a href="">Loyalty Program</a>
             </li>
         </ul>
@@ -81,7 +81,10 @@
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
             </span>
-            <h1>GRAND HILTON HOTEL</h1>
+            <div class="flex">
+            <h1 class="grand">GRAND HILTON HOTELS</h1>
+            <div class="flash-offer-top">Flash Offer</div>
+        </div>
             <p class="menu-info-two">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
         <div class="flex desc-box">
@@ -477,7 +480,7 @@
     </section>
     <section class="activities">
         <h3>OTHER ACTIVITIES</h3>
-        <div class="grid-activity flex">
+        <div class="grid-activity grid">
             <div class="grid-activity-one grid-activity-item">
                 <div class="activity-decs">
                     <p>The curious corner of chamarel</p>
@@ -559,7 +562,7 @@
             <div class="contact-details footer-grid-six">
                 <h3>CONTACT DETAILS</h3>
                 <p class="feel-note">Feel free to contact us by phone, email or by our contact form</p>
-                <div>
+                <div class="contact-info">
                     <div class="flex contact-div">
                         <div class="contact-icon"><img src="images/map-pin.png" alt=""></div>
                         <div>
